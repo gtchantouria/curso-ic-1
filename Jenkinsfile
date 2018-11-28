@@ -6,17 +6,17 @@ pipeline {
      stages {
          stage('Build') {
              steps {
-                 sh 'aca va el build'
+                 println 'aca va el build'
              }
          }
          stage('Deploy') {
               steps {
-                  sh 'aca va el deploy'
+                  println 'aca va el deploy'
               }
          }
          stage('Verify') {
                steps {
-                   sh 'aca va el verify'
+                   println 'aca va el verify'
                }
          }
 
