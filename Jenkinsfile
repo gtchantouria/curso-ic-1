@@ -9,19 +9,14 @@ pipeline {
                  sh 'aca va el build'
              }
          }
-         stage('Build') {
-              steps {
-                  sh 'aca va el build'
-              }
-         }
          stage('Deploy') {
               steps {
-                  sh 'aca va el build'
+                  sh 'aca va el deploy'
               }
          }
          stage('Verify') {
                steps {
-                   sh 'aca va el build'
+                   sh 'aca va el verify'
                }
          }
 
