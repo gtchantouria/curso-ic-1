@@ -7,12 +7,12 @@ pipeline {
         stage('Build') {
          steps {
              println 'aca va el build'
-             sh './gradlew build'
+
          }
          post{
             always{
 
-                junit 'build/test-results/test/*.xml'
+                println "ava se exportan los resultados de los test unitarios"
             }
          }
 
@@ -25,6 +25,12 @@ pipeline {
         stage('Verify') {
            steps {
                println 'aca va el verify'
+           }
+           post{
+               always{
+
+                   println "ava se exportan los resultados de los test de aceptación"
+               }
            }
         }
 
